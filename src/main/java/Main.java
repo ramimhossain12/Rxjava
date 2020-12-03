@@ -9,20 +9,20 @@ public class Main {
 
 
     public static void main(String[] args) {
-      //  throwException();
-        throwExceptionUsingCallable();
-    }
-
-    private static void throwException() {
-        Observable obs = Observable.error(new Exception("An Exception"));
-        obs.subscribe(System.out::println, error -> System.out.println("Error 1:" + error.hashCode()));
-        obs.subscribe(System.out::println, error -> System.out.println("Error 2:" + error.hashCode()));
+        createibservaleUsingEmpty();
+        createibservaleUsingNever();
 
     }
-  private  static  void throwExceptionUsingCallable(){
-      Observable obs = Observable.error(() -> new Exception("An Exception"));
-      obs.subscribe(System.out::println, error -> System.out.println("Error 1:" + error.hashCode()));
-      obs.subscribe(System.out::println, error -> System.out.println("Error 2:" + error.hashCode()));
+
+    private static void createibservaleUsingEmpty() {
+
+        Observable observable = Observable.empty();
+        observable.subscribe(System.out::println, System.out::println,()-> System.out.println("Commpleted"));
+
+    }
+  private  static  void createibservaleUsingNever() {
+      Observable observable = Observable.never();
+      observable.subscribe(System.out::println, System.out::println,()-> System.out.println("Commpleted"));
   }
 
 }
