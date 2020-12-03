@@ -9,27 +9,21 @@ public class Main {
 
 
     public static void main(String[] args) {
-        //createColdObservable();
-        createHotAndConnectableObservable();
+      //  throwException();
+        throwExceptionUsingCallable();
     }
 
-     private  static  void  createColdObservable(){
-        Observable<Integer> observable = Observable.just(1,2,3,4,5);
-        observable.subscribe(item -> System.out.println("observer 1: "+item));
+    private static void throwException() {
+        Observable obs = Observable.error(new Exception("An Exception"));
+        obs.subscribe(System.out::println, error -> System.out.println("Error 1:" + error.hashCode()));
+        obs.subscribe(System.out::println, error -> System.out.println("Error 2:" + error.hashCode()));
 
-
-         observable.subscribe(item -> System.out.println("observer 2: "+item));
-     }
-
-     private  static  void  createHotAndConnectableObservable(){
-         ConnectableObservable<Integer> observable = Observable.just(1,2,3,4,5).publish();
-
-         observable.subscribe(item -> System.out.println("observer 1: "+item));
-         observable.subscribe(item -> System.out.println("observer 2: "+item));
-         observable.connect();
-     }
-
-
+    }
+  private  static  void throwExceptionUsingCallable(){
+      Observable obs = Observable.error(() -> new Exception("An Exception"));
+      obs.subscribe(System.out::println, error -> System.out.println("Error 1:" + error.hashCode()));
+      obs.subscribe(System.out::println, error -> System.out.println("Error 2:" + error.hashCode()));
+  }
 
 }
 
