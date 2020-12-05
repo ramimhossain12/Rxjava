@@ -8,3 +8,5 @@ Observable_defer.java
  Observable_defer
 ObservablefromCallable.java
  ObservablefromCallable
+MapOperator.java
+ MapOperator
