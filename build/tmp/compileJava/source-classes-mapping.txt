@@ -6,3 +6,5 @@ TheReactive_Loop.java
  TheReactive_Loop
 Observable_defer.java
  Observable_defer
+ObservablefromCallable.java
+ ObservablefromCallable
