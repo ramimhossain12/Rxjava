@@ -10,3 +10,5 @@ ObservablefromCallable.java
  ObservablefromCallable
 MapOperator.java
  MapOperator
+Operators.java
+ Operators
