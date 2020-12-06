@@ -10,5 +10,7 @@ ObservablefromCallable.java
  ObservablefromCallable
 MapOperator.java
  MapOperator
-Operators.java
- Operators
+Operator/Operators.java
+ Operator.Operators
+Operator/Distinct_and_distinctUtilChanged.java
+ Operator.Distinct_and_distinctUtilChanged
