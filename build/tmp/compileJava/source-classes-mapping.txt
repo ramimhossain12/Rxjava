@@ -14,3 +14,5 @@ Operator/Operators.java
  Operator.Operators
 Operator/Distinct_and_distinctUtilChanged.java
  Operator.Distinct_and_distinctUtilChanged
+Operator/DefaultEmptyAND_SwitchEmpty.java
+ Operator.DefaultEmptyAND_SwitchEmpty
