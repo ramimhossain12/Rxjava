@@ -5,7 +5,7 @@ import io.reactivex.Observable;
 public class Operators_Contains {
     public static void main(String[] args) {
         containsWithPremitive();
-        containsWithNonPremitive();
+        //containsWithNonPremitive();
     }
 
     class User{
@@ -18,15 +18,15 @@ public class Operators_Contains {
 
 
 
-    private static void containsWithNonPremitive() {
-
-        User user = new User("ramim");
-        Observable.just(user)
-                .contains(new User["ramim"])
-                .subscribe(System.out::println);
-
-
-    }
+//    private static void containsWithNonPremitive() {
+//
+//        User user = new User("ramim");
+//        Observable.just(user)
+//                .contains(new User["ramim"])
+//                .subscribe(System.out::println);
+//
+//
+//    }
 
     private static void containsWithPremitive() {
         Observable.just(1,2,3,4,5)
