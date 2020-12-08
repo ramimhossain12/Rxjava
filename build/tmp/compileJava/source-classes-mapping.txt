@@ -25,3 +25,5 @@ Operator/Operators_Contains.java
  Operator.Operators_Contains$User
 Operator/DO_Action.java
  Operator.DO_Action
+Operator/doFinallyvsdoOnDispose.java
+ Operator.doFinallyvsdoOnDispose
