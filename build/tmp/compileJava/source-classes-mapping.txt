@@ -20,3 +20,5 @@ Operator/RepeatAndScan.java
  Operator.RepeatAndScan
 Operator/OperratorSort.java
  Operator.OperratorSort
+Operator/Operators_Contains.java
+ Operator.Operators_Contains
