@@ -27,3 +27,5 @@ Operator/DO_Action.java
  Operator.DO_Action
 Operator/doFinallyvsdoOnDispose.java
  Operator.doFinallyvsdoOnDispose
+Operator/flatMap.java
+ Operator.flatMap
